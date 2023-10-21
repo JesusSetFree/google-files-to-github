@@ -1,5 +1,5 @@
-name: google-docs-to-github
-description: Export Google Docs to GitHub.
+name: google-files-to-github
+description: Export Google Files to GitHub.
 inputs:
   github_branch:
     description: GitHub branch name where files will be pushed.
@@ -18,7 +18,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - uses: r7kamura/google-docs-to-markdown@v0
+    - uses: JesusSetFree/google-files-download@v0.0.1
       with:
         google_drive_folder_id: ${{ inputs.google_drive_folder_id }}
     - uses: peaceiris/actions-gh-pages@v3
