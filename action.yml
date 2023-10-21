@@ -18,7 +18,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - uses: JesusSetFree/google-files-download@0.0.2
+    - uses: JesusSetFree/google-files-download@v0.0.2
       with:
         google_drive_folder_id: ${{ inputs.google_drive_folder_id }}
     - uses: peaceiris/actions-gh-pages@v3
